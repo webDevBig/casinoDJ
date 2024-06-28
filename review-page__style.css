@@ -315,7 +315,7 @@ header .search-btn {
     height: 24px;
     min-height: 24px;
     border-radius: 50%;
-    outline: 1px solid rgba(36, 43, 48, .2);
+    border: 1px solid rgba(36, 43, 48, .2);
     outline-offset: -1px;
     object-fit: cover;
 }
@@ -357,7 +357,7 @@ header .search-btn {
     height: 24px;
     min-height: 24px;
     border-radius: 50%;
-    outline: 1px solid rgba(36, 43, 48, .2);
+    border: 1px solid rgba(36, 43, 48, .2);
     outline-offset: -1px;
     object-fit: cover;
 }
@@ -1335,12 +1335,35 @@ button.menu-toggle span::after {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16px;
+    position: relative;
 }
 
 #sectionB .items-box.payment-box .item {
     width: 60px;
     height: 40px;
     padding: 0;
+    background-color: white;
+    border: none;
+}
+
+#sectionB .items-box.payment-box .item.discover-item {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(162deg, transparent 56.5%, #FD6020 51%) bottom right, white;
+    background-size: 66% 34%;
+    background-repeat: no-repeat;
+}
+
+#sectionB .items-box.payment-box .item::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    pointer-events: none;
+    border: 2px solid rgba(36, 43, 48, .1);
+    top: 0;
+    left: 0;
+    border-radius: 8px;
 }
 
 #sectionB .items-box.developers-box img {
@@ -1406,7 +1429,7 @@ button.menu-toggle span::after {
 
 #sectionC h2 span.line {
     opacity: .4;
-    margin: 0 3px;
+    padding: 0 3px;
 }
 
 #sectionC .title {
@@ -1531,8 +1554,8 @@ button.menu-toggle span::after {
 }
 
 #sectionC .item {
-    outline: 2px solid rgba(36, 43, 48, .2);
-    outline-offset: -2px;
+    border: 2px solid rgba(36, 43, 48, .2);
+    /* outline-offset: -2px; */
     border-radius: 16px;
     padding: 32px 24px;
     overflow: hidden;
@@ -1889,12 +1912,12 @@ button.menu-toggle span::after {
 
 #sectionC .item.positive-item {
     background-color: rgba(49, 205, 65, .1);
-    outline-color: #31CD41;
+    border-color: #31CD41;
 }
 
 #sectionC .item.negative-item {
     background-color: rgba(248, 101, 92, .1);
-    outline-color: #F8655C;
+    border-color: #F8655C;
 }
 
 #sectionC .news-box {

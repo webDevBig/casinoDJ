@@ -4,16 +4,22 @@
     box-sizing: border-box;
 }
 
-a, a:active, a:focus, a:hover {
+a,
+a:active,
+a:focus,
+a:hover {
     outline: none;
     -webkit-tap-highlight-color: transparent;
-  }
-  
+}
 
-  button, button:active, button:focus, button:hover {
+
+button,
+button:active,
+button:focus,
+button:hover {
     outline: none;
     -webkit-tap-highlight-color: transparent;
-  }
+}
 
 body,
 html {
@@ -304,8 +310,8 @@ header .search-btn {
     height: 24px;
     min-height: 24px;
     border-radius: 50%;
-    outline: 1px solid rgba(36, 43, 48, .2);
-    outline-offset: -1px;
+    border: 1px solid rgba(36, 43, 48, .2);
+    /* outline-offset: -1px; */
     object-fit: cover;
 }
 
@@ -332,7 +338,6 @@ header .search-btn {
     align-items: center;
 }
 
-
 .dropdown-content a {
     margin: 12px 0;
     text-decoration: none;
@@ -346,8 +351,8 @@ header .search-btn {
     height: 24px;
     min-height: 24px;
     border-radius: 50%;
-    outline: 1px solid rgba(36, 43, 48, .2);
-    outline-offset: -1px;
+    border: 1px solid rgba(36, 43, 48, .2);
+    /* outline-offset: -1px; */
     object-fit: cover;
 }
 
@@ -848,8 +853,7 @@ button.menu-toggle span::after {
     width: 100%;
     min-height: 212px;
     background-color: white;
-    outline: 2px solid rgba(36, 43, 48, .1);
-    outline-offset: -1px;
+    border: 2px solid rgba(36, 43, 48, .1);
     border-radius: 16px;
     position: relative;
     display: flex;
@@ -858,7 +862,9 @@ button.menu-toggle span::after {
     opacity: 1;
     transform: scaleY(1);
     transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
 }
+
 
 .site.hidden {
     opacity: 0;
@@ -907,6 +913,7 @@ button.menu-toggle span::after {
 
 .site .top-section {
     width: 100%;
+    height: 206px;
     display: grid;
     grid-template-columns: 0.7fr 1.2fr 1.1fr 1.1fr 0.9fr;
 }
@@ -1002,7 +1009,7 @@ button.menu-toggle span::after {
 
 .site .rating-box {
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .site .rating-box .rating {
@@ -1308,8 +1315,8 @@ button.menu-toggle span::after {
 .site .bottom-section .items-box .item {
     padding: 8px 12px;
     background-color: white;
-    outline: 2px solid rgba(36, 43, 48, .1);
-    outline-offset: -2px;
+    /* border: 2px solid rgba(36, 43, 48, .1); */
+    /* outline-offset: -2px; */
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -1320,6 +1327,19 @@ button.menu-toggle span::after {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16px;
+    position: relative;
+}
+
+.site .bottom-section .items-box .item::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    pointer-events: none;
+    border: 2px solid rgba(36, 43, 48, .1);
+    top: 0;
+    left: 0;
+    border-radius: 8px;
 }
 
 .site .bottom-section .items-box.payment-box .item {
@@ -1658,8 +1678,8 @@ button.menu-toggle span::after {
 }
 
 #sectionC .item {
-    outline: 2px solid rgba(36, 43, 48, .2);
-    outline-offset: -2px;
+    border: 2px solid rgba(36, 43, 48, .2);
+    /* outline-offset: -2px; */
     border-radius: 16px;
     padding: 32px 24px;
     overflow: hidden;
@@ -1923,12 +1943,12 @@ button.menu-toggle span::after {
 
 #sectionC .item.positive-item {
     background-color: rgba(49, 205, 65, .1);
-    outline-color: #31CD41;
+    border-color: #31CD41;
 }
 
 #sectionC .item.negative-item {
     background-color: rgba(248, 101, 92, .1);
-    outline-color: #F8655C;
+    border-color: #F8655C;
 }
 
 .inner-page #sectionC #quest7 .grid {
@@ -2128,14 +2148,39 @@ button.menu-toggle span::after {
 #sectionC .payment-box .payment {
     width: 60px;
     height: 40px;
-    padding: 5px 4px;
+    padding: 7px 6px;
     background-color: white;
-    border: 2px solid rgba(36, 43, 48, .1);
+    /* border: 2px solid rgba(36, 43, 48, .1); */
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 4px;
+    position: relative;
+}
+#sectionC .payment-box .payment img{
+  border-radius: 0px;
+  width: auto;
+}
+
+#sectionC .payment-box .payment::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    pointer-events: none;
+    border: 2px solid rgba(36, 43, 48, .1);
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+#sectionC .payment-box .payment.discover-item {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(162deg, transparent 56.5%, #FD6020 51%) bottom right, white;
+    background-size: 66% 34%;
+    background-repeat: no-repeat;
 }
 
 #sectionC .payment-box .payment img {
@@ -2662,6 +2707,7 @@ footer span {
     }
 
     .site .top-section {
+        height: 230px;
         grid-template-columns: 0.7fr 1fr 1.1fr 1fr 1fr;
     }
 
@@ -2981,7 +3027,7 @@ footer span {
 
     .site .top-section {
         grid-template-columns: 1fr 1fr;
-        height: auto;
+        height: 400px;
     }
 
     .site .logo-box {
@@ -3039,7 +3085,7 @@ footer span {
     }
 
     .site .bottom-section {
-        height: 814px;
+        height: 756px;
     }
 
     .site .info-box .name {
@@ -3134,6 +3180,12 @@ footer span {
     .back_to_top {
         right: 25px;
     }
+    .site .bottom-section .benefits-box {
+       height: auto;
+    }
+    .site .rating-box{
+        align-items: center;
+    }
 }
 
 
@@ -3195,7 +3247,7 @@ footer span {
     }
 
     .site .bottom-section {
-        height: 1066px;
+        height: 1052px;
     }
 
     #sectionB .grid-2,
@@ -3222,6 +3274,20 @@ footer span {
     #sectionC .grid-4 {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 16px;
+    }
+
+    .site .top-section {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .site .bonus-box button {
+        max-width: 100%;
+    }
+
+    .site .top-section .clm,
+    .site .button-box .btn {
+        max-width: 100%;
     }
 
     #sectionC .table-box .header {
@@ -3392,9 +3458,11 @@ footer span {
     .transition-box .transition-content {
         max-width: 300px;
     }
+
     .site .bottom-section {
-        height: 1170px;
+        height: 1188px;
     }
+
     .site .bottom-section .items-box.developers-box img {
         margin: 12px 0;
     }
