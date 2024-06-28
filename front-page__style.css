@@ -3454,6 +3454,9 @@ footer span {
     #sectionE .icons-row img:nth-child(4) {
         width: 126px;
     }
+    .site{
+        width: 345px;
+    }
 
 
 }
@@ -3463,6 +3466,9 @@ footer span {
     .content,
     .transition-box .transition-content {
         max-width: 300px;
+    }
+    .site{
+        width: 300px;
     }
 
     .site .bottom-section {
