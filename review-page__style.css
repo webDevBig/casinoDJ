@@ -2703,6 +2703,9 @@ footer span {
     #sectionE .icons-row img:nth-child(4) {
         width: 96px;
     }
+    header .navbar-nav {
+        width: 426px;
+    }
 }
 
 @media all and (max-width:1130px) {

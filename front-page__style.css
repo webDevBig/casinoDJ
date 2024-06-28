@@ -2845,6 +2845,9 @@ footer span {
     #sectionE .icons-row img:nth-child(4) {
         width: 96px;
     }
+    header .navbar-nav {
+        width: 426px;
+    }
 }
 
 @media all and (max-width:1130px) {
@@ -2853,11 +2856,13 @@ footer span {
     .transition-box .transition-content {
         max-width: 900px;
     }
+    header .navbar-nav {
+        width: 426px;
+    }
 
     header .search {
         width: 190px;
     }
-
     .site .top-section .benefits-box {
         display: none;
     }
