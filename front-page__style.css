@@ -3283,6 +3283,7 @@ footer span {
 
     .site .bonus-box button {
         max-width: 100%;
+        width: 309px;
     }
 
     .site .top-section .clm,
@@ -3465,6 +3466,10 @@ footer span {
 
     .site .bottom-section .items-box.developers-box img {
         margin: 12px 0;
+    }
+    .site .bonus-box button {
+        max-width: 100%;
+        width: 264px;
     }
 }
 
