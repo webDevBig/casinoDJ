@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+a,
+a:active,
+a:focus,
+a:hover {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+button,
+button:active,
+button:focus,
+button:hover {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 body,
 html {
     font-family: Inter, sans-serif;
@@ -25,6 +42,7 @@ section {
     padding: 96px 0;
     position: relative;
 }
+
 button {
     cursor: pointer;
 }
@@ -748,10 +766,12 @@ button.menu-toggle span::after {
 #sectionA.fixed-section {
     border-bottom: 1px solid rgba(36, 43, 48, .1);
 }
+
 #sectionA.fixed-section .row-grid {
     grid-template-columns: 128px 1fr 284px;
     border: none;
 }
+
 #sectionA.fixed-section.fixed .row-grid {
     display: none;
 }
@@ -2904,7 +2924,8 @@ footer span {
     #sectionA .row-grid {
         display: none;
     }
-    #sectionA.fixed-section .row-grid{
+
+    #sectionA.fixed-section .row-grid {
         display: grid;
         grid-template-columns: 80px 1fr 48px;
     }
@@ -3079,6 +3100,30 @@ footer span {
 
     .back_to_top {
         right: 25px;
+    }
+
+    #sectionC #quest3 .table-box-grid-4 .header,
+    #sectionC #quest3 .table-box-grid-4 .table-row {
+        grid-row-gap: 16px;
+        grid-column-gap: 16px;
+    }
+
+    #sectionC .table-box .table-row,
+    #sectionC .table-box .header {
+        grid-row-gap: 16px;
+        grid-column-gap: 16px;
+        padding: 16px;
+    }
+
+    #sectionC #quest5 .table-box-grid-4 img {
+        max-width: 72px;
+    }
+
+    #sectionC #quest5 .table-box-grid-4 .header,
+    #sectionC #quest5 .table-box-grid-4 .table-row {
+        grid-template-columns: 1fr .8fr .8fr .8fr;
+        padding: 16px 10px;
+        grid-column-gap: 10px;
     }
 }
 
@@ -3280,6 +3325,13 @@ footer span {
     .transition-box .transition-content {
         max-width: 300px;
     }
+
+    #sectionA .card {
+        margin: 24px auto;
+        width: 100%;
+        min-width: 100%;
+    }
+
 }
 
 /* slider style */
@@ -3391,5 +3443,5 @@ footer span {
     width: 100%;
     z-index: 9;
     background-color: rgba(255, 255, 255, 1);
-  
+
 }

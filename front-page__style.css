@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+a, a:active, a:focus, a:hover {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+
+  button, button:active, button:focus, button:hover {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
 body,
 html {
     font-family: Inter, sans-serif;
@@ -3380,6 +3391,12 @@ footer span {
     .content,
     .transition-box .transition-content {
         max-width: 300px;
+    }
+    .site .bottom-section {
+        height: 1170px;
+    }
+    .site .bottom-section .items-box.developers-box img {
+        margin: 12px 0;
     }
 }
 
