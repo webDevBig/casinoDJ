@@ -3201,6 +3201,12 @@ footer span {
     .site .rating-box {
         align-items: center;
     }
+    #sectionB .item {
+        padding: 16px 12px;
+    }
+    #sectionB .grid-4 {
+        grid-row-gap: 16px;
+    }
 }
 
 

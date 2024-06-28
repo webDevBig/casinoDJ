@@ -1375,7 +1375,9 @@ button.menu-toggle span::after {
 
 
 /* #sectionC  */
-
+#sectionC {
+    padding-bottom: 0;
+}
 #sectionC .content {
     position: relative;
     color: #242B30;
@@ -2258,7 +2260,6 @@ button.menu-toggle span::after {
     border: 2px solid rgba(36, 43, 48, .2);
     border-radius: 16px;
     padding: 48px;
-    margin-top: 96px;
 }
 
 .inner-page #sectionD .written-box {
@@ -3090,6 +3091,9 @@ footer span {
 
     #sectionC .dropdown-container .clearfix h5 {
         width: calc(100% - 40px);
+    }
+    .arcidion-box{
+        margin-bottom: 0;
     }
 
     #sectionD .written-box {
