@@ -3239,6 +3239,12 @@ footer span {
     #sectionA .article-info-box .row {
         flex-direction: column;
     }
+    .inner-page #sectionA .article-info-box .row, .inner-page #sectionA .article-info-box .clm {
+        align-items: flex-start;
+    }
+    .inner-page #sectionB h1 {
+      text-align: left;
+    }
 
     #sectionA .article-info-box img {
         margin: 0 0 12px;
@@ -3323,9 +3329,9 @@ footer span {
         padding: 16px;
     }
 
-    .inner-page #sectionC #quest4 .table-box .header,
+    /* .inner-page #sectionC #quest4 .table-box .header, */
     .inner-page #sectionC #quest4 .table-box .table-row {
-        grid-template-columns: .8fr 1.5fr 123px;
+        grid-template-columns: 80px 1.5fr 123px;
     }
 
     .inner-page #sectionC #quest4 .table-box .table-row .btn,
@@ -3639,4 +3645,13 @@ footer span {
 
 .navigation button.next {
     transform: rotate(-90deg);
+}
+@media all and (max-width:650px){
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 24px 0px 0;
+    }
 }

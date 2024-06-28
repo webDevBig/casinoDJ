@@ -1449,6 +1449,13 @@ button.menu-toggle span::after {
     margin-top: 24px;
     opacity: .8;
 }
+#sectionC .text-2 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    margin-top: 24px;
+    opacity: .8;
+}
 
 #sectionC .stiky-table {
     position: sticky;
@@ -3478,4 +3485,13 @@ footer span {
     z-index: 9;
     background-color: rgba(255, 255, 255, 1);
 
+}
+@media all and (max-width:650px){
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 24px 0px 0;
+    }
 }
