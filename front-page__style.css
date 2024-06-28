@@ -1111,7 +1111,6 @@ button.menu-toggle span::after {
 
 .site .benefits-box {
     max-width: 288px;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -1135,6 +1134,7 @@ button.menu-toggle span::after {
 
 .site .benefits-box .benefits-list {
     list-style: none;
+    margin-top: 12px;
 }
 
 .site .benefits-box .benefits-item {
@@ -2710,7 +2710,7 @@ footer span {
 
     .site .top-section {
         height: 230px;
-        grid-template-columns: 0.7fr 1fr 1.1fr 1fr 1fr;
+        grid-template-columns: 0.7fr .9fr 1.1fr 1fr 1fr;
     }
 
     .site .box {
@@ -2792,6 +2792,9 @@ footer span {
         line-height: 40px;
         letter-spacing: -0.94px;
     }
+    #sectionB .item{
+        padding: 24px 12px;
+    }
 
     .inner-page #sectionB h1 {
         max-width: 43%;
@@ -2813,6 +2816,9 @@ footer span {
         width: 100%;
         grid-template-columns: .6fr 1.4fr .8fr;
         color: #242B30;
+    }
+    .site .top-section {
+        height: 254px;
     }
 
     .inner-page #sectionC #quest4 .table-box .header,
