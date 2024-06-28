@@ -3460,6 +3460,13 @@ footer span {
         width: 345px;
     }
 
+    .site .logo-box,
+    .site .top-section .clm,
+    .site .stars-box,
+    .site .bonus-box {
+        width: 345px;
+    }
+
     .site .bonus-box .title {
         width: 309px;
     }
@@ -3475,6 +3482,13 @@ footer span {
     }
 
     .site {
+        width: 300px;
+    }
+
+    .site .logo-box,
+    .site .top-section .clm,
+    .site .stars-box,
+    .site .bonus-box {
         width: 300px;
     }
 
