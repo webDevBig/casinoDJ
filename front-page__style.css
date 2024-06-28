@@ -2158,9 +2158,10 @@ button.menu-toggle span::after {
     margin: 4px;
     position: relative;
 }
-#sectionC .payment-box .payment img{
-  border-radius: 0px;
-  width: auto;
+
+#sectionC .payment-box .payment img {
+    border-radius: 0px;
+    width: auto;
 }
 
 #sectionC .payment-box .payment::after {
@@ -3180,10 +3181,12 @@ footer span {
     .back_to_top {
         right: 25px;
     }
+
     .site .bottom-section .benefits-box {
-       height: auto;
+        height: auto;
     }
-    .site .rating-box{
+
+    .site .rating-box {
         align-items: center;
     }
 }
@@ -3281,13 +3284,15 @@ footer span {
         max-width: 100%;
     }
 
-    .site .bonus-box button {
-        max-width: 100%;
-        width: 309px;
-    }
 
     .site .top-section .clm,
     .site .button-box .btn {
+        max-width: 100%;
+    }
+
+    .site .button-box .btn,
+    .site .bonus-box button {
+        width: 309px;
         max-width: 100%;
     }
 
@@ -3467,9 +3472,16 @@ footer span {
     .site .bottom-section .items-box.developers-box img {
         margin: 12px 0;
     }
-    .site .bonus-box button {
+   
+    .site .top-section .clm {
         max-width: 100%;
+        /* width: 264px; */
+    }
+
+    .site .button-box .btn,
+    .site .bonus-box button {
         width: 264px;
+        max-width: 100%;
     }
 }
 
