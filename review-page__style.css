@@ -2706,6 +2706,9 @@ footer span {
     header .navbar-nav {
         width: 426px;
     }
+    #sectionC #quest9 .btn {
+        padding: 6px 10px;
+    }
 }
 
 @media all and (max-width:1130px) {
