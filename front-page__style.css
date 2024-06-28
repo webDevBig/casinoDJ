@@ -3455,8 +3455,13 @@ footer span {
     #sectionE .icons-row img:nth-child(4) {
         width: 126px;
     }
-    .site{
+
+    .site {
         width: 345px;
+    }
+
+    .site .bonus-box .title {
+        width: 309px;
     }
 
 
@@ -3468,8 +3473,13 @@ footer span {
     .transition-box .transition-content {
         max-width: 300px;
     }
-    .site{
+
+    .site {
         width: 300px;
+    }
+
+    .site .bonus-box .title {
+        width: 264px;
     }
 
     .site .bottom-section {
@@ -3479,7 +3489,7 @@ footer span {
     .site .bottom-section .items-box.developers-box img {
         margin: 12px 0;
     }
-   
+
     .site .top-section .clm {
         max-width: 100%;
         /* width: 264px; */
