@@ -1093,7 +1093,7 @@ button.menu-toggle span::after {
     line-height: 24px;
     letter-spacing: -0.48px;
     background-color: white;
-    margin: 0 0 12px;
+    /* margin: 0 0 12px; */
     text-transform: uppercase;
 }
 
@@ -3040,7 +3040,7 @@ footer span {
 
     .site .top-section {
         grid-template-columns: 1fr 1fr;
-        height: 400px;
+        height: 356px;
     }
 
     .site .logo-box {
@@ -3064,7 +3064,7 @@ footer span {
     }
 
     .site .bonus-box {
-        justify-content: center;
+        /* justify-content: center; */
         text-align: center;
     }
 
@@ -3262,7 +3262,7 @@ footer span {
     }
 
     .site .bottom-section {
-        height: 1052px;
+        height: 1075px;
     }
 
     #sectionB .grid-2,
