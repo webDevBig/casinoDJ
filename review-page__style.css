@@ -1378,6 +1378,7 @@ button.menu-toggle span::after {
 #sectionC {
     padding-bottom: 0;
 }
+
 #sectionC .content {
     position: relative;
     color: #242B30;
@@ -1449,6 +1450,7 @@ button.menu-toggle span::after {
     margin-top: 24px;
     opacity: .8;
 }
+
 #sectionC .text-2 {
     font-size: 20px;
     line-height: 28px;
@@ -2711,9 +2713,11 @@ footer span {
     #sectionE .icons-row img:nth-child(4) {
         width: 96px;
     }
+
     header .navbar-nav {
         width: 426px;
     }
+
     #sectionC #quest9 .btn {
         padding: 6px 10px;
     }
@@ -3099,7 +3103,8 @@ footer span {
     #sectionC .dropdown-container .clearfix h5 {
         width: calc(100% - 40px);
     }
-    .arcidion-box{
+
+    .arcidion-box {
         margin-bottom: 0;
     }
 
@@ -3486,12 +3491,19 @@ footer span {
     background-color: rgba(255, 255, 255, 1);
 
 }
-@media all and (max-width:650px){
+
+@media all and (max-width:650px) {
     .slider {
         position: relative;
         width: 100%;
         max-width: 100%;
         overflow: hidden;
         margin: 24px 0px 0;
+    }
+
+    #sectionC ul.table li:first-of-type a {
+        color: #5E87F1;
+        border-color: #34A4F4;
+        opacity: 1;
     }
 }

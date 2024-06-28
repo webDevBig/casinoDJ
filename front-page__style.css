@@ -1501,6 +1501,8 @@ button.menu-toggle span::after {
     line-height: 28px;
     letter-spacing: -0.6px;
     font-weight: bold;
+    width: calc(100% + 10px);
+    margin: 0 -5px;
 }
 
 #sectionB .item .text {
@@ -3291,6 +3293,9 @@ footer span {
     #sectionB .btn {
         margin: 8px 0 0;
     }
+    #sectionB .item .title {
+        width: 100%;
+    }
 
     #sectionB .row {
         flex-wrap: wrap;
@@ -3653,5 +3658,10 @@ footer span {
         max-width: 100%;
         overflow: hidden;
         margin: 24px 0px 0;
+    }
+    #sectionC ul.table li:first-of-type a {
+        color: #5E87F1;
+        border-color: #34A4F4;
+        opacity: 1;
     }
 }
