@@ -756,6 +756,9 @@ a.menu-toggle span::after {
     padding: 24px 0;
     border-bottom: 1px solid rgba(36, 43, 48, .1);
 }
+.sectionA .row-grid .clm{
+    justify-content: center;
+}
 
 .sectionA.fixed-section {
     border-bottom: 1px solid rgba(36, 43, 48, .1);
