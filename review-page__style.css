@@ -770,10 +770,6 @@ a.menu-toggle span::after {
     border: none;
 }
 
-/* .sectionA.fixed-section.fixed .row-grid {
-    display: none;
-} */
-
 .sectionA.fixed-section.fixed .row-grid.fixed-row {
     display: grid;
 }
