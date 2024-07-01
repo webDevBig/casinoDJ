@@ -12,8 +12,7 @@
     <header>
         <div class="content-bg">
             <div class="content">
-                <button class="menu-toggle" tabindex="0" aria-label="Menu"
-                    aria-controls="primary-menu"><span></span></button>
+                <a class="menu-toggle"><span></span></a>
                 <div class="main-logo">
                     <img alt="logo" src="img/main-logo.svg">
                     <h1>Menu</h1>
@@ -75,13 +74,13 @@
 
                 </div>
                 <input type="search" placeholder="Search..." class="search desctop-search">
-                <button class="search-btn"></button>
+                <a class="search-btn"></a>
                 <div class="flag-dropdown">
-                    <button class="dropbtn">
+                    <a class="dropbtn">
                         <img id="selected-flag-header" class="selected-flag" src="img/flags/UnitedStates.svg"
                             alt="USA Flag">
                         <i></i>
-                    </button>
+                    </a>
                     <div class="dropdown-content">
                         <a href="#" data-country="UnitedStates" data-language="US - English"><img
                                 src="img/flags/UnitedStates.svg" alt="USA Flag"> </a>
@@ -224,35 +223,36 @@
                 <p class="title">Follow us:</p>
                 <div class="media-box">
                     <div class="item"><a href="https://www.facebook.com/wowvegascom/" target="_blank"><img
-                                alt="facebook" src="img/facebook-fill.svg" /></a></div>
-                    <div class="item"><a target="_blank"><img alt="linkedin" src="img/linkedin-fill.svg" /></a>
+                                alt="facebook" src="img/facebook-fill.svg"></a></div>
+                    <div class="item"><a target="_blank"><img alt="linkedin" src="img/linkedin-fill.svg"></a>
                     </div>
                     <div class="item"><a href="https://x.com/wowvegascom" target="_blank"><img alt="twitter"
-                                src="img/twitter-x-fill.svg" /></a></div>
+                                src="img/twitter-x-fill.svg"></a></div>
                     <div class="item"><a href="https://www.youtube.com/channel/UCBvbug2yPCkkYHbafkaudNg"
-                            target="_blank"><img alt="youtube" src="img/youtube-fill.svg" /></a></div>
+                            target="_blank"><img alt="youtube" src="img/youtube-fill.svg"></a></div>
                 </div>
             </div>
 
         </div>
     </header>
+
     <section id="sectionA" class="center">
         <div class="transition-box">
             <div class="transition-content">
-                <a>Home</a>
+                <a href="">Home</a>
                 <span>/</span>
-                <a>Casino</a>
+                <a href="">Casino</a>
                 <span>/</span>
-                <a>Guide</a>
+                <a href="">Guide</a>
                 <span>/</span>
-                <a class="final">First Deposit Welcome Bonus Guide</a>
+                <a class="final" href="">First Deposit Welcome Bonus Guide</a>
             </div>
         </div>
         <div class="content">
             <h1>First Deposit Welcome Bonus Guide</h1>
             <div class="article-info-box">
                 <div class="row">
-                    <img class="autor-img" alt="autor" src="img/user.jpeg" />
+                    <img class="autor-img" alt="autor" src="img/user.jpeg" >
                     <div class="clm">
                         <p class="label">Written by:</p>
                         <p class="title">William Wilderman</p>
@@ -284,16 +284,16 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/wowvegas.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/wowvegas.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">WOW Vegas Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5"
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
-                                            step="0.5" style="--value:4.8" type="range" value="4.8">
+                                            step="0.5" style="--value:4.8" type="range" value="4.8" disabled>
                                     </label>
                                 </div>
                                 <div class="row">
@@ -301,7 +301,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -309,7 +309,7 @@
                                 <p class="title">1.75 Million WOW Coins + 35 SC</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -319,10 +319,10 @@
                                 <li class="benefits-item">Easy-to-navigate, well designed website</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -344,7 +344,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -353,7 +353,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -362,7 +362,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -371,7 +371,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -380,7 +380,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -413,36 +413,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -451,14 +451,14 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/golden.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/golden.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">Golden Hearts Games</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.75" type="range" value="4.75">
                                     </label>
@@ -468,7 +468,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -476,7 +476,7 @@
                                 <p class="title">7,500 Gold Coins + 5 FREE SC Coins</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -486,10 +486,10 @@
                                 <li class="benefits-item">Big prizez via McJackpot features</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -511,7 +511,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -520,7 +520,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -529,7 +529,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -538,7 +538,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -547,7 +547,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -580,36 +580,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -618,14 +618,14 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/pulsz.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/pulsz.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">Pulsz Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.4" type="range" value="4.4">
                                     </label>
@@ -635,7 +635,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -643,7 +643,7 @@
                                 <p class="title">Up to 367,000 GC + FREE 32.3 SC</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -653,10 +653,10 @@
                                 <li class="benefits-item">Authentic brand, made in USA</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -678,7 +678,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -687,7 +687,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -696,7 +696,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -705,7 +705,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -714,7 +714,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -747,36 +747,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -785,13 +785,13 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/casino.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/casino.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">High 5 Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box"> <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.25" type="range" value="4.25">
                                     </label></div>
@@ -800,7 +800,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -808,7 +808,7 @@
                                 <p class="title">5 SC, 250 GC and 600 Diamonds</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -818,10 +818,10 @@
                                 <li class="benefits-item">Authentic brand, made in USA</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -843,7 +843,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -852,7 +852,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -861,7 +861,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -870,7 +870,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -879,7 +879,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -912,36 +912,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -950,14 +950,14 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/stake.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/stake.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">Stake.us Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.2" type="range" value="4.2">
                                     </label>
@@ -967,7 +967,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -975,7 +975,7 @@
                                 <p class="title">250,000 GC + $25 SC</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -985,10 +985,10 @@
                                 <li class="benefits-item">300+ games</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -1010,7 +1010,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -1019,7 +1019,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -1028,7 +1028,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -1037,7 +1037,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -1046,7 +1046,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -1079,36 +1079,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -1118,14 +1118,14 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/wowvegas.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/wowvegas.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">WOW Vegas Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.8" type="range" value="4.8">
                                     </label>
@@ -1135,7 +1135,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -1143,7 +1143,7 @@
                                 <p class="title">1.75 Million WOW Coins + 35 SC</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -1153,10 +1153,10 @@
                                 <li class="benefits-item">Easy-to-navigate, well designed website</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -1178,7 +1178,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -1187,7 +1187,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -1196,7 +1196,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -1205,7 +1205,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -1214,7 +1214,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -1247,36 +1247,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -1285,14 +1285,14 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/golden.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/golden.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">Golden Hearts Games</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.75" type="range" value="4.75">
                                     </label>
@@ -1302,7 +1302,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -1310,7 +1310,7 @@
                                 <p class="title">7,500 Gold Coins + 5 FREE SC Coins</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -1320,10 +1320,10 @@
                                 <li class="benefits-item">Big prizez via McJackpot features</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -1345,7 +1345,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -1354,7 +1354,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -1363,7 +1363,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -1372,7 +1372,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -1381,7 +1381,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -1414,36 +1414,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg" / </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="clm">
-                                <p class="note">Developers:</p>
-                                <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                <div class="clm">
+                                    <p class="note">Developers:</p>
+                                    <div class="items-box developers-box">
+                                        <img alt="logo" src="img/playtech.svg">
+                                        <img alt="logo" src="img/realtime.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1452,14 +1452,14 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/pulsz.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/pulsz.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">Pulsz Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.4" type="range" value="4.4">
                                     </label>
@@ -1469,7 +1469,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -1477,7 +1477,7 @@
                                 <p class="title">Up to 367,000 GC + FREE 32.3 SC</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -1487,10 +1487,10 @@
                                 <li class="benefits-item">Authentic brand, made in USA</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -1512,7 +1512,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -1521,7 +1521,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -1530,7 +1530,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -1539,7 +1539,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -1548,7 +1548,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -1581,36 +1581,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -1619,13 +1619,13 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/casino.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/casino.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">High 5 Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box"> <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.25" type="range" value="4.25">
                                     </label></div>
@@ -1634,7 +1634,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -1642,7 +1642,7 @@
                                 <p class="title">5 SC, 250 GC and 600 Diamonds</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -1652,10 +1652,10 @@
                                 <li class="benefits-item">Authentic brand, made in USA</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -1677,7 +1677,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -1686,7 +1686,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -1695,7 +1695,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -1704,7 +1704,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -1713,7 +1713,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -1746,36 +1746,36 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
@@ -1784,14 +1784,14 @@
                 <div class="site">
                     <div class="top-section">
                         <div class="logo-box box">
-                            <img alt="logo" class="site-logo" src="img/stake.jpeg" />
+                            <img alt="logo" class="site-logo" src="img/stake.jpeg">
                         </div>
                         <div class="info-box clm box">
                             <p class="name">Stake.us Casino</p>
                             <div class="rating-box clm">
                                 <div class="stars-box">
                                     <label class="rating-label">
-                                        <input class="rating-stars" max="5" readonly
+                                        <input class="rating-stars" max="5" disabled
                                             oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                             step="0.5" style="--value:4.2" type="range" value="4.2">
                                     </label>
@@ -1801,7 +1801,7 @@
                                     <p class="note">CasinoDJ rating</p>
                                 </div>
                             </div>
-                            <button class="add-to-fav"><i></i>Add to favorites</button>
+                            <a class="add-to-fav" href="#"><i></i>Add to favorites</a>
                         </div>
                         <div class="bonus-box clm box">
                             <div class="clm">
@@ -1809,7 +1809,7 @@
                                 <p class="title">250,000 GC + $25 SC</p>
                             </div>
 
-                            <button class="bonus">COPYBONUSCODE <i></i></button>
+                            <a class="bonus" href="#">COPYBONUSCODE <i></i></a>
                         </div>
                         <div class="benefits-box box clm">
                             <p class="note">Experience Benefits:</p>
@@ -1819,10 +1819,10 @@
                                 <li class="benefits-item">300+ games</li>
                             </ul>
                         </div>
-                        <div class="button-box clm box">
+                        <div class="a-box clm box">
                             <div class="clm">
-                                <button class="btn color-btn">Play Now</button>
-                                <button class="btn white-btn">Read Full Reviews</button>
+                                <a class="btn color-btn" href="#">Play Now</a>
+                                <a class="btn white-btn" href="#">Read Full Reviews</a>
                             </div>
                             <label class="switch-btn">
                                 Show Features
@@ -1844,7 +1844,7 @@
                         <div class="features-row">
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/dice-faces-05.svg" />
+                                    <img alt="icon" src="img/dice-faces-05.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">200+</p>
@@ -1853,7 +1853,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/champion.svg" />
+                                    <img alt="icon" src="img/champion.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">93.68%</p>
@@ -1862,7 +1862,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-receive-01.svg" />
+                                    <img alt="icon" src="img/money-receive-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$25</p>
@@ -1871,7 +1871,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/money-send-01.svg" />
+                                    <img alt="icon" src="img/money-send-01.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">$2500 /w</p>
@@ -1880,7 +1880,7 @@
                             </div>
                             <div class="features-item ">
                                 <div class="icon-box">
-                                    <img alt="icon" src="img/timer-02.svg" />
+                                    <img alt="icon" src="img/timer-02.svg">
                                 </div>
                                 <div class="clm">
                                     <p class="title">24 - 72 hrs</p>
@@ -1913,41 +1913,43 @@
                                 <p class="note">Payment Methods:</p>
                                 <div class="items-box payment-box">
                                     <div class="item">
-                                        <img alt="payment icon" src="img/visa.svg" />
+                                        <img alt="payment icon" src="img/visa.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/master.svg" />
+                                        <img alt="payment icon" src="img/master.svg">
                                     </div>
                                     <div class="item discover-item">
-                                        <img alt="payment icon" src="img/discover.svg" />
+                                        <img alt="payment icon" src="img/discover.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/amex.svg" />
+                                        <img alt="payment icon" src="img/amex.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/paypal.svg" />
+                                        <img alt="payment icon" src="img/paypal.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/gpay.svg" />
+                                        <img alt="payment icon" src="img/gpay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/applepay.svg" />
+                                        <img alt="payment icon" src="img/applepay.svg">
                                     </div>
                                     <div class="item">
-                                        <img alt="payment icon" src="img/bank.svg" />
+                                        <img alt="payment icon" src="img/bank.svg">
                                     </div>
                                 </div>
                             </div>
                             <div class="clm">
                                 <p class="note">Developers:</p>
                                 <div class="items-box developers-box">
-                                    <img alt="logo" src="img/playtech.svg" />
-                                    <img alt="logo" src="img/realtime.svg" />
+                                    <img alt="logo" src="img/playtech.svg">
+                                    <img alt="logo" src="img/realtime.svg">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="show-more" id="show-more">
                     <p>Show more Casinos</p> <i></i>
                 </div>
@@ -1960,7 +1962,7 @@
             <h1>Don’t miss any updates from us!</h1>
             <div class="row">
                 <input type="text" placeholder="Enter email address">
-                <button class="btn color-btn">Subscribe Newsletter</button>
+                <a class="btn color-btn" href="#">Subscribe Newsletter</a>
             </div>
         </div>
     </section>
@@ -1991,7 +1993,7 @@
                         quite a few of them and they all work a little bit different from one another. For this reason,
                         we will explain in detail how each type of online casino welcome bonus works.</p>
                     <div class="row">
-                        <img alt="icon" src="img/money-receive-01.svg" class="icon" />
+                        <img alt="icon" src="img/money-receive-01.svg" class="icon" >
                         <div class="clm">
                             <p class="title">Deposit Bonus</p>
                             <p class="text">Almost every online casino or sportsbook gives new players a welcome bonus
@@ -2008,7 +2010,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img alt="icon" src="img/bitcoin-01.svg" class="icon" />
+                        <img alt="icon" src="img/bitcoin-01.svg" class="icon" >
                         <div class="clm">
                             <p class="title">Free Spins</p>
                             <p class="text">Some casinos don’t give deposit bonuses to new players but free
@@ -2021,7 +2023,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img alt="icon" src="img/cashback.svg" class="icon" />
+                        <img alt="icon" src="img/cashback.svg" class="icon" >
                         <div class="clm">
                             <p class="title">Cashback Bonus</p>
                             <p class="text">Although it is not really common, some online casinos and sportsbooks give a
@@ -2036,7 +2038,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img alt="icon" src="img/money-not-found-01.svg" class="icon" />
+                        <img alt="icon" src="img/money-not-found-01.svg" class="icon" >
                         <div class="clm">
                             <p class="title">No Deposit Bonus</p>
                             <p class="text">The no deposit bonus is the rarest type of casino welcome bonus. With this
@@ -2116,28 +2118,28 @@
                         <div class="table-row grid">
                             <p class="table-title">Quinn Casino</p>
                             <p class="text">$22</p>
-                            <button class="btn white-btn">Visit Casino</button>
+                            <a class="btn white-btn" href="#">Visit Casino</a>
                         </div>
                         <div class="table-row grid">
                             <p class="table-title">LeoVegas Casino</p>
                             <p class="text">$20</p>
-                            <button class="btn white-btn">Visit Casino</button>
+                            <a class="btn white-btn"  href="#">Visit Casino</a>
                         </div>
                         <div class="table-row grid">
                             <p class="table-title">Grosvenor Casino</p>
                             <p class="text">$20</p>
-                            <button class="btn white-btn">Visit Casino</button>
+                            <a class="btn white-btn"  href="#">Visit Casino</a>
                         </div>
 
                         <div class="table-row grid">
                             <p class="table-title">LeoVegas Casino</p>
                             <p class="text">$18</p>
-                            <button class="btn white-btn">Visit Casino</button>
+                            <a class="btn white-btn"  href="#">Visit Casino</a>
                         </div>
                         <div class="table-row grid">
                             <p class="table-title">Grosvenor Casino</p>
                             <p class="text">$15</p>
-                            <button class="btn white-btn">Visit Casino</button>
+                            <a class="btn white-btn"  href="#">Visit Casino</a>
                         </div>
                     </div>
                 </div>
@@ -2148,7 +2150,7 @@
                         you in detail what these bonus types actually mean and how they work.</p>
 
                     <div class="row">
-                        <img alt="icon" src="img/money-bag-02.svg" class="icon" />
+                        <img alt="icon" src="img/money-bag-02.svg" class="icon" >
                         <div class="clm">
                             <p class="title">Cashable Bonus</p>
                             <p class="text">Most casino bonuses are cashable bonuses, also called deposit bonuses. When
@@ -2165,7 +2167,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img alt="icon" src="img/coins-01.svg" class="icon" />
+                        <img alt="icon" src="img/coins-01.svg" class="icon" >
                         <div class="clm">
                             <p class="title">Sticky Bonus</p>
                             <p class="text">The sticky bonus is quite rare compared to the cashable bonus. Sticky
@@ -2186,7 +2188,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img alt="icon" src="img/money-add-01.svg" class="icon" />
+                        <img alt="icon" src="img/money-add-01.svg" class="icon" >
                         <div class="clm">
                             <p class="title">Post-wager Bonus</p>
                             <p class="text">The post-wager bonus is a bit of a weird type of casino bonus, but
@@ -2222,11 +2224,11 @@
                             <div class="slide">
                                 <div class="news-box">
                                     <div class="card">
-                                        <div class="logo"> <img alt="logo" src="img/mrvegas.jpeg" /></div>
+                                        <div class="logo"> <img alt="logo" src="img/mrvegas.jpeg" ></div>
                                         <p class="name">Mr Vegas Casino</p>
                                         <div class="stars-box">
                                             <label class="rating-label">
-                                                <input class="rating-stars" max="5" readonly
+                                                <input class="rating-stars" max="5" disabled 
                                                     oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                                     step="0.5" style="--value:4.8" type="range" value="4.8">
                                             </label>
@@ -2239,18 +2241,18 @@
                                             <p class="note">Welcome Bonus:</p>
                                             <p class="title">100% Welcome Bonus up to $200 + 11 Bonus Spins</p>
                                         </div>
-                                        <button class="btn color-btn">Play Now</button>
+                                        <a class="btn color-btn" href="">Play Now</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="news-box">
                                     <div class="card">
-                                        <div class="logo"> <img alt="logo" src="img/betmgm.jpeg" /></div>
+                                        <div class="logo"> <img alt="logo" src="img/betmgm.jpeg" ></div>
                                         <p class="name">BetMGM Casino</p>
                                         <div class="stars-box">
                                             <label class="rating-label">
-                                                <input class="rating-stars" max="5" readonly
+                                                <input class="rating-stars" max="5" disabled
                                                     oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                                     step="0.5" style="--value:4.8" type="range" value="4.8">
                                             </label>
@@ -2263,7 +2265,7 @@
                                             <p class="note">Welcome Bonus:</p>
                                             <p class="title">Up To $200 Welcome Bonus + 100 Bonus Spins</p>
                                         </div>
-                                        <button class="btn color-btn">Play Now</button>
+                                        <a class="btn color-btn" href="">Play Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -2274,7 +2276,7 @@
                                         <p class="name">PlayOJO Casino</p>
                                         <div class="stars-box">
                                             <label class="rating-label">
-                                                <input class="rating-stars" max="5" readonly=""
+                                                <input class="rating-stars" max="5" disabled
                                                     oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                                     step="0.5" style="--value:4.8" type="range" value="4.8">
                                             </label>
@@ -2287,15 +2289,15 @@
                                             <p class="note">Welcome Bonus:</p>
                                             <p class="title">Get 80 Extra Spins on your 1st Deposit</p>
                                         </div>
-                                        <button class="btn color-btn">Play Now</button>
+                                        <a class="btn color-btn" href="">Play Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="pagination"></div>
                         <div class="navigation">
-                            <button class="prev"></button>
-                            <button class="next"></button>
+                            <a class="prev"></a>
+                            <a class="next"></a>
                         </div>
                     </div>
 
@@ -2304,12 +2306,12 @@
                         <div class="table-row grid">
                             <p class="table-title">Party Casino</p>
                             <p class="text">Daily Free Spins on the 'Party Prizes' Wheel</p>
-                            <button class="btn white-btn">Visit Casino</button>
+                            <a class="btn white-btn" href="">Visit Casino</a>
                         </div>
                         <div class="table-row grid">
                             <p class="table-title">AllBritish Casino</p>
                             <p class="text">Wide Selection of Progressive Jackpot Slots</p>
-                            <button class="btn white-btn">Visit Casino</button>
+                            <a class="btn white-btn" href="">Visit Casino</a>
                         </div>
                     </div>
                 </div>
@@ -2459,7 +2461,7 @@
             <div class="written-box clm">
                 <p class="note">Written by:</p>
                 <div class="article-info-box row">
-                    <img class="autor-img" alt="autor" src="img/user.jpeg" />
+                    <img class="autor-img" alt="autor" src="img/user.jpeg" >
                     <div class="clm">
                         <p class="title">William Wilderman</p>
                         <p class="label">Casino Editor</p>
@@ -2484,9 +2486,9 @@
                     <p class="text">News, updates and industry insights directly to your inbox.</p>
                     <div class="input-row">
                         <input type="text" placeholder="Enter email address">
-                        <button class="btn color-btn">Subscribe</button>
+                        <a class="btn color-btn" href="">Subscribe</a>
                     </div>
-                    <label>By providing email address and clicking on the subscribe button, you consent to receiving
+                    <label>By providing email address and clicking on the subscribe a, you consent to receiving
                         communications from CasinoDJ related to news, updates, and events and agree to the <a>Privacy
                             Policy.</a></label>
                 </div>
@@ -2528,34 +2530,34 @@
                     <p class="title">Follow us:</p>
                     <div class="media-box">
                         <div class="item"><a href="https://www.facebook.com/wowvegascom/" target="_blank"><img
-                                    alt="facebook" src="img/facebook-fill.svg" /></a></div>
-                        <div class="item"><a target="_blank"><img alt="linkedin" src="img/linkedin-fill.svg" /></a>
+                                    alt="facebook" src="img/facebook-fill.svg" ></a></div>
+                        <div class="item"><a target="_blank" href="#"><img alt="linkedin" src="img/linkedin-fill.svg" ></a>
                         </div>
                         <div class="item"><a href="https://x.com/wowvegascom" target="_blank"><img alt="twitter"
-                                    src="img/twitter-x-fill.svg" /></a></div>
+                                    src="img/twitter-x-fill.svg" ></a></div>
                         <div class="item"><a href="https://www.youtube.com/channel/UCBvbug2yPCkkYHbafkaudNg"
-                                target="_blank"><img alt="youtube" src="img/youtube-fill.svg" /></a></div>
+                                target="_blank"><img alt="youtube" src="img/youtube-fill.svg" ></a></div>
                     </div>
                 </div>
                 <div class="clm">
                     <p class="title">Website Verified & Secured by:</p>
                     <div class="icons-row">
-                        <img alt="logo" src="img/dmca_logo.svg" width="128px" />
-                        <img alt="logo" src="img/gamcare.svg" width="138px" />
-                        <img alt="logo" src="img/BeGambleAware.svg" width="290px" />
-                        <img alt="logo" src="img/pci.svg" width="126px" />
+                        <img alt="logo" src="img/dmca_logo.svg" width="128px" >
+                        <img alt="logo" src="img/gamcare.svg" width="138px" >
+                        <img alt="logo" src="img/BeGambleAware.svg" width="290px" >
+                        <img alt="logo" src="img/pci.svg" width="126px" >
                     </div>
 
                 </div>
                 <div class="clm">
                     <p class="title">Choose Language</p>
                     <div class="flag-dropdown">
-                        <button class="dropbtn">
+                        <a class="dropbtn">
                             <img id="selected-flag-footer" class="selected-flag" src="img/flags/UnitedStates.svg"
                                 alt="USA Flag">
                             <p id="language">US - English</p>
                             <i></i>
-                        </button>
+                        </a>
                         <div class="dropdown-content">
                             <a href="#" data-country="UnitedStates" data-language="US - English"><img
                                     src="img/flags/UnitedStates.svg" alt="USA Flag"> US - English</a>

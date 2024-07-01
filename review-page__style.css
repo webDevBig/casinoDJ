@@ -13,14 +13,6 @@ a:hover {
 }
 
 
-button,
-button:active,
-button:focus,
-button:hover {
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-}
-
 body,
 html {
     font-family: Inter, sans-serif;
@@ -43,8 +35,9 @@ section {
     position: relative;
 }
 
-button {
+a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 p {
@@ -623,7 +616,7 @@ header .navbar-nav .nav-item.dd:hover .dropdownMenu {
 /*--------------------------------------------------------------
   ## Hamburger menu
   --------------------------------------------------------------*/
-button.menu-toggle {
+a.menu-toggle {
     display: block;
     z-index: 9000;
     overflow: hidden;
@@ -646,30 +639,30 @@ button.menu-toggle {
 }
 
 @media (min-width: 950px) {
-    button.menu-toggle {
+    a.menu-toggle {
         display: none;
     }
 }
 
-button.menu-toggle:focus {
+a.menu-toggle:focus {
     outline: none;
 }
 
-button.menu-toggle:hover,
-button.menu-toggle:focus {
+a.menu-toggle:hover,
+a.menu-toggle:focus {
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
 }
 
-button.menu-toggle.is-active span {
+a.menu-toggle.is-active span {
     background-color: white;
     -webkit-transform: rotate(-225deg);
     -ms-transform: rotate(-225deg);
     transform: rotate(-225deg);
 }
 
-button.menu-toggle.is-active span::before {
+a.menu-toggle.is-active span::before {
     background-color: white;
     top: 0;
     -webkit-transform: rotate(90deg);
@@ -677,7 +670,7 @@ button.menu-toggle.is-active span::before {
     transform: rotate(90deg);
 }
 
-button.menu-toggle.is-active span::after {
+a.menu-toggle.is-active span::after {
     background-color: transparent;
     bottom: 0;
     -webkit-transform: rotate(0deg);
@@ -685,13 +678,13 @@ button.menu-toggle.is-active span::after {
     transform: rotate(0deg);
 }
 
-button.menu-toggle.is-active span::before,
-button.menu-toggle.is-active span::after {
+a.menu-toggle.is-active span::before,
+a.menu-toggle.is-active span::after {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
-button.menu-toggle span {
+a.menu-toggle span {
     display: block;
     position: absolute;
     top: 12px;
@@ -703,8 +696,8 @@ button.menu-toggle span {
     transition-duration: 0.3s;
 }
 
-button.menu-toggle span::before,
-button.menu-toggle span::after {
+a.menu-toggle span::before,
+a.menu-toggle span::after {
     position: absolute;
     display: block;
     left: 0;
@@ -716,7 +709,7 @@ button.menu-toggle span::after {
     transition-duration: 0.3s;
 }
 
-button.menu-toggle span::before {
+a.menu-toggle span::before {
     top: -5px;
     -webkit-transition-property: top, -webkit-transform;
     transition-property: top, -webkit-transform;
@@ -724,7 +717,7 @@ button.menu-toggle span::before {
     transition-property: top, transform, -webkit-transform;
 }
 
-button.menu-toggle span::after {
+a.menu-toggle span::after {
     bottom: -5px;
     -webkit-transition-property: bottom, -webkit-transform;
     transition-property: bottom, -webkit-transform;
@@ -840,11 +833,17 @@ button.menu-toggle span::after {
 #sectionA .row-grid .color-btn {
     width: 216px;
     padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #sectionA .row-grid .white-btn {
     width: 100%;
     padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #sectionA .content {
@@ -1189,7 +1188,7 @@ button.menu-toggle span::after {
     width: 100%;
 }
 
-#sectionA .btn-box button {
+#sectionA .btn-box a {
     width: 100%;
     height: 56px;
     margin: 6px 0;
@@ -1547,6 +1546,7 @@ button.menu-toggle span::after {
 }
 
 #sectionC .grid {
+    width: 100%;
     grid-row-gap: 24px;
     grid-column-gap: 24px;
     padding: 12px 0;
@@ -2089,6 +2089,9 @@ button.menu-toggle span::after {
     font-weight: 600;
     width: calc(100% - 48px);
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #sectionC .color-btn {
@@ -2659,11 +2662,11 @@ footer span {
         width: 258px;
     }
 
-    .site .bonus-box button {
+    .site .bonus-box a {
         padding: 6px 8px 6px 8px;
     }
 
-    .site .button-box .btn {
+    .site .a-box .btn {
         padding: 10px 0;
     }
 
@@ -2899,7 +2902,7 @@ footer span {
         max-width: none;
     }
 
-    .site .button-box .switch-btn {
+    .site .a-box .switch-btn {
         margin-top: 24px;
     }
 
@@ -2921,7 +2924,7 @@ footer span {
         justify-content: center;
     }
 
-    .site .bonus-box button {
+    .site .bonus-box a {
         width: 100%;
         margin: 24px 0 0;
     }
@@ -2970,6 +2973,8 @@ footer span {
     #sectionA.fixed-section .row-grid {
         display: grid;
         grid-template-columns: 80px 1fr 48px;
+        grid-row-gap: 12px;
+        grid-column-gap: 12px;
     }
 
     #sectionA h1 {
@@ -3038,6 +3043,7 @@ footer span {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: -0.42px;
+        text-overflow: clip;
     }
 
     #sectionA .row-grid .color-btn {
@@ -3229,6 +3235,13 @@ footer span {
         height: 1066px;
     }
 
+    #sectionA .row-grid .bonus-text {
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        overflow: hidden;
+        max-width: 193px;
+    }
+
     #sectionC.table-box .table-row {
         grid-row-gap: 16px;
     }
@@ -3377,6 +3390,9 @@ footer span {
         width: 100%;
         min-width: 100%;
     }
+    #sectionA .row-grid .bonus-text {
+        max-width: 147px;
+    }
 
 }
 
@@ -3436,7 +3452,7 @@ footer span {
     z-index: 2;
 }
 
-.pagination button {
+.pagination a {
     background-color: #242B30;
     opacity: .2;
     border: none;
@@ -3460,7 +3476,7 @@ footer span {
     margin: 24px auto 0;
 }
 
-.navigation button {
+.navigation a {
     background-color: transparent;
     border: none;
     padding: 12px;
@@ -3475,11 +3491,11 @@ footer span {
     background-image: url(img/arrow.svg);
 }
 
-.navigation button.prev {
+.navigation a.prev {
     transform: rotate(90deg);
 }
 
-.navigation button.next {
+.navigation a.next {
     transform: rotate(-90deg);
 }
 

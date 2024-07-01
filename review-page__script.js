@@ -130,8 +130,8 @@ function changeLang(language, event) {
 }
 
 
-document.querySelectorAll('.dropbtn').forEach(function (button) {
-    button.addEventListener('mouseover', function () {
+document.querySelectorAll('.dropbtn').forEach(function (a) {
+    a.addEventListener('mouseover', function () {
         let dropdownContent = this.nextElementSibling;
         showDropdown(dropdownContent);
     });
@@ -161,19 +161,19 @@ document.querySelectorAll('.dropdown-content a').forEach(function (item) {
 
 
 
-/* begin begin Back to Top button  */
+/* begin begin Back to Top a  */
 let requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
 document.addEventListener('DOMContentLoaded', function () {
-    const goTopButton = document.querySelector('[data-action="gotop"]');
+    const goTopa = document.querySelector('[data-action="gotop"]');
     const windowViewPortHeight = window.innerHeight; // browser viewport height
     let isRequestingAnimationFrame = false;
 
-    if (!goTopButton) {
+    if (!goTopa) {
         return;
     }
 
-    goTopButton.addEventListener('click', function () {
+    goTopa.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -182,19 +182,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
         if (!isRequestingAnimationFrame) {
-            requestAnimationFrame(filterGoTopButtonVisibility);
+            requestAnimationFrame(filterGoTopaVisibility);
             isRequestingAnimationFrame = true;
         }
     });
 
-    function filterGoTopButtonVisibility(timestamp) {
+    function filterGoTopaVisibility(timestamp) {
         let windowPageYOffset = window.pageYOffset || document.documentElement.scrollTop;
         if (windowPageYOffset > windowViewPortHeight) {
-            goTopButton.classList.add('show');
+            goTopa.classList.add('show');
             isRequestingAnimationFrame = false;
         } else {
-            goTopButton.classList.remove('show');
-            requestAnimationFrame(filterGoTopButtonVisibility);
+            goTopa.classList.remove('show');
+            requestAnimationFrame(filterGoTopaVisibility);
         }
     }
 })
@@ -251,7 +251,7 @@ subMenu = menuContainer.querySelectorAll('.nav-item.dd');
 content = document.querySelector('header .content')
 
 // header .mobile-menu .navbar-nav .nav-link
-// Toggle main menu and set WAI-ARIA values when menu button is clicked
+// Toggle main menu and set WAI-ARIA values when menu a is clicked
 menuToggle.onclick = function () {
     if (hasClass(menuContainer, 'toggled')) {
         removeClass(menuToggle, 'is-active');
@@ -312,8 +312,8 @@ class Slider {
         this.slides = this.slider.querySelector('.slides');
         this.slide = this.slider.querySelectorAll('.slide');
         this.pagination = this.slider.querySelector('.pagination');
-        this.prevButton = this.slider.querySelector('.prev');
-        this.nextButton = this.slider.querySelector('.next');
+        this.preva = this.slider.querySelector('.prev');
+        this.nexta = this.slider.querySelector('.next');
         this.index = 0;
         this.slidesCount = this.slide.length;
 
@@ -339,12 +339,12 @@ class Slider {
 
         this.pagination.innerHTML = '';
         for (let i = 0; i < pageCount; i++) {
-            const button = document.createElement('button');
-            if (i === 0) button.classList.add('active');
-            this.pagination.appendChild(button);
+            const a = document.createElement('a');
+            if (i === 0) a.classList.add('active');
+            this.pagination.appendChild(a);
         }
 
-        this.pagButtons = this.pagination.querySelectorAll('button');
+        this.pagas = this.pagination.querySelectorAll('a');
     }
 
     addEventListeners() {
@@ -357,15 +357,15 @@ class Slider {
         this.slider.addEventListener('touchend', this.endDrag.bind(this));
         this.slider.addEventListener('touchmove', this.drag.bind(this));
 
-        this.pagButtons.forEach((button, i) => {
-            button.addEventListener('click', () => {
+        this.pagas.forEach((a, i) => {
+            a.addEventListener('click', () => {
                 this.index = i;
                 this.updateSlider();
             });
         });
 
-        this.prevButton.addEventListener('click', this.prevSlide.bind(this));
-        this.nextButton.addEventListener('click', this.nextSlide.bind(this));
+        this.preva.addEventListener('click', this.prevSlide.bind(this));
+        this.nexta.addEventListener('click', this.nextSlide.bind(this));
 
         window.addEventListener('resize', this.updatePagination.bind(this));
     }
@@ -411,7 +411,7 @@ class Slider {
     updateSlider() {
         const translateX = -(this.index * 100) / this.slidesPerView;
         this.slides.style.transform = `translateX(${translateX}%)`;
-        this.pagButtons.forEach((btn, i) => {
+        this.pagas.forEach((btn, i) => {
             btn.classList.toggle('active', i === this.index);
         });
     }

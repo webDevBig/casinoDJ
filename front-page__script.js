@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // best sites
     const sites = document.querySelectorAll(".site");
-    const button = document.getElementById('show-more');
+    const a = document.getElementById('show-more');
     let showMore = true;
 
     sites.forEach(site => {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    button.addEventListener('click', () => {
+    a.addEventListener('click', () => {
         sites.forEach((site, index) => {
             if (index >= 5) {
                 if (showMore) {
@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-        button.querySelector("p").textContent = showMore ? `Show less Casinos ` :
+        a.querySelector("p").textContent = showMore ? `Show less Casinos ` :
             `Show more Casinos `;
-        button.querySelector("i").style.transform = showMore ? 'rotate(180deg)' :
+        a.querySelector("i").style.transform = showMore ? 'rotate(180deg)' :
             'rotate(0deg)';
         showMore = !showMore;
     });
@@ -172,8 +172,8 @@ function changeLang(language, event) {
    
 }
 
-document.querySelectorAll('.dropbtn').forEach(function (button) {
-    button.addEventListener('mouseover', function () {
+document.querySelectorAll('.dropbtn').forEach(function (a) {
+    a.addEventListener('mouseover', function () {
         let dropdownContent = this.nextElementSibling;
         showDropdown(dropdownContent);
     });
@@ -204,19 +204,19 @@ document.querySelectorAll('.dropdown-content a').forEach(function (item) {
 
 
 
-/* begin begin Back to Top button  */
+/* begin begin Back to Top a  */
 let requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
 document.addEventListener('DOMContentLoaded', function () {
-    const goTopButton = document.querySelector('[data-action="gotop"]');
+    const goTopa = document.querySelector('[data-action="gotop"]');
     const windowViewPortHeight = window.innerHeight; // browser viewport height
     let isRequestingAnimationFrame = false;
 
-    if (!goTopButton) {
+    if (!goTopa) {
         return;
     }
 
-    goTopButton.addEventListener('click', function () {
+    goTopa.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -225,19 +225,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
         if (!isRequestingAnimationFrame) {
-            requestAnimationFrame(filterGoTopButtonVisibility);
+            requestAnimationFrame(filterGoTopaVisibility);
             isRequestingAnimationFrame = true;
         }
     });
 
-    function filterGoTopButtonVisibility(timestamp) {
+    function filterGoTopaVisibility(timestamp) {
         let windowPageYOffset = window.pageYOffset || document.documentElement.scrollTop;
         if (windowPageYOffset > windowViewPortHeight) {
-            goTopButton.classList.add('show');
+            goTopa.classList.add('show');
             isRequestingAnimationFrame = false;
         } else {
-            goTopButton.classList.remove('show');
-            requestAnimationFrame(filterGoTopButtonVisibility);
+            goTopa.classList.remove('show');
+            requestAnimationFrame(filterGoTopaVisibility);
         }
     }
 })
@@ -295,7 +295,7 @@ subMenu = menuContainer.querySelectorAll('.nav-item.dd');
 content = document.querySelector('header .content')
 
 // header .mobile-menu .navbar-nav .nav-link
-// Toggle main menu and set WAI-ARIA values when menu button is clicked
+// Toggle main menu and set WAI-ARIA values when menu a is clicked
 menuToggle.onclick = function () {
     if (hasClass(menuContainer, 'toggled')) {
         removeClass(menuToggle, 'is-active');

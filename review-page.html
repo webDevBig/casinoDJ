@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="review-page__style.css" />
 </head>
 
-<body class="">
+<body >
     <header>
         <div class="content-bg">
             <div class="content">
-                <button class="menu-toggle" tabindex="0" aria-label="Menu"
-                    aria-controls="primary-menu"><span></span></button>
+                <a class="menu-toggle"><span></span></a>
                 <div class="main-logo">
                     <img alt="logo" src="img/main-logo.svg">
                     <h1>Menu</h1>
@@ -75,13 +74,13 @@
 
                 </div>
                 <input type="search" placeholder="Search..." class="search desctop-search">
-                <button class="search-btn"></button>
+                <a class="search-btn"></a>
                 <div class="flag-dropdown">
-                    <button class="dropbtn">
+                    <a class="dropbtn">
                         <img id="selected-flag-header" class="selected-flag" src="img/flags/UnitedStates.svg"
                             alt="USA Flag">
                         <i></i>
-                    </button>
+                    </a>
                     <div class="dropdown-content">
                         <a href="#" data-country="UnitedStates" data-language="US - English"><img
                                 src="img/flags/UnitedStates.svg" alt="USA Flag"> </a>
@@ -224,26 +223,27 @@
                 <p class="title">Follow us:</p>
                 <div class="media-box">
                     <div class="item"><a href="https://www.facebook.com/wowvegascom/" target="_blank"><img
-                                alt="facebook" src="img/facebook-fill.svg" /></a></div>
-                    <div class="item"><a target="_blank"><img alt="linkedin" src="img/linkedin-fill.svg" /></a>
+                                alt="facebook" src="img/facebook-fill.svg"></a></div>
+                    <div class="item"><a target="_blank"><img alt="linkedin" src="img/linkedin-fill.svg"></a>
                     </div>
                     <div class="item"><a href="https://x.com/wowvegascom" target="_blank"><img alt="twitter"
-                                src="img/twitter-x-fill.svg" /></a></div>
+                                src="img/twitter-x-fill.svg"></a></div>
                     <div class="item"><a href="https://www.youtube.com/channel/UCBvbug2yPCkkYHbafkaudNg"
-                            target="_blank"><img alt="youtube" src="img/youtube-fill.svg" /></a></div>
+                            target="_blank"><img alt="youtube" src="img/youtube-fill.svg"></a></div>
                 </div>
             </div>
 
         </div>
     </header>
+  
     <section id="sectionA" class="center">
         <div class="transition-box">
             <div class="transition-content">
-                <a>Home</a>
+                <a href="">Home</a>
                 <span>/</span>
-                <a>Casino</a>
+                <a href="">Casino</a>
                 <span>/</span>
-                <a>United States</a>
+                <a href="">United States</a>
                 <span>/</span>
                 <a class="final">WOW Vegas Casino Review</a>
             </div>
@@ -253,7 +253,7 @@
                 <h1>WOW Vegas Casino Review</h1>
                 <div class="article-info-box">
                     <div class="row">
-                        <img class="autor-img" alt="autor" src="img/user.jpeg" />
+                        <img class="autor-img" alt="autor" src="img/user.jpeg" >
                         <div class="clm">
                             <p class="label">Written by:</p>
                             <p class="title">William Wilderman</p>
@@ -320,7 +320,7 @@
                     <p class="note">Overall Rating:</p>
                     <div class="stars-box">
                         <label class="rating-label">
-                            <input class="rating-stars" max="5" readonly=""
+                            <input class="rating-stars" max="5" disabled
                                 oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)" step="0.5"
                                 style="--value:4.8" type="range" value="4.8">
                         </label>
@@ -336,9 +336,9 @@
                     <p class="title">1.75 Million WOW Coins + 35 SC</p>
                 </div>
                 <div class="btn-box">
-                    <button class="bonus-btn btn">COPYBONUSCODE <i></i></button>
-                    <button class="btn color-btn">Play Now</button>
-                    <button class="add-to-fav"><i></i>Add to favorites</button>
+                    <a class="bonus-btn btn" href="">COPYBONUSCODE <i></i></a>
+                    <a class="btn color-btn" href="">Play Now</a>
+                    <a class="add-to-fav" href=""><i></i>Add to favorites</a>
                 </div>
 
             </div>
@@ -346,7 +346,7 @@
                 <h1>WOW Vegas Casino Review</h1>
                 <div class="article-info-box">
                     <div class="row">
-                        <img class="autor-img" alt="autor" src="img/user.jpeg" />
+                        <img class="autor-img" alt="autor" src="img/user.jpeg" >
                         <div class="clm">
                             <p class="label">Written by:</p>
                             <p class="title">William Wilderman</p>
@@ -366,7 +366,7 @@
             <div class="features-row">
                 <div class="features-item ">
                     <div class="icon-box">
-                        <img alt="icon" src="img/dice-faces-05.svg" />
+                        <img alt="icon" src="img/dice-faces-05.svg" >
                     </div>
                     <div class="clm">
                         <p class="title">200+</p>
@@ -375,7 +375,7 @@
                 </div>
                 <div class="features-item ">
                     <div class="icon-box">
-                        <img alt="icon" src="img/champion.svg" />
+                        <img alt="icon" src="img/champion.svg" >
                     </div>
                     <div class="clm">
                         <p class="title">93.68%</p>
@@ -384,7 +384,7 @@
                 </div>
                 <div class="features-item ">
                     <div class="icon-box">
-                        <img alt="icon" src="img/money-receive-01.svg" />
+                        <img alt="icon" src="img/money-receive-01.svg" >
                     </div>
                     <div class="clm">
                         <p class="title">$25</p>
@@ -393,7 +393,7 @@
                 </div>
                 <div class="features-item ">
                     <div class="icon-box">
-                        <img alt="icon" src="img/money-send-01.svg" />
+                        <img alt="icon" src="img/money-send-01.svg" >
                     </div>
                     <div class="clm">
                         <p class="title">$2500 /w</p>
@@ -402,7 +402,7 @@
                 </div>
                 <div class="features-item ">
                     <div class="icon-box">
-                        <img alt="icon" src="img/timer-02.svg" />
+                        <img alt="icon" src="img/timer-02.svg" >
                     </div>
                     <div class="clm">
                         <p class="title">24 - 72 hrs</p>
@@ -435,36 +435,36 @@
                     <p class="note">Payment Methods:</p>
                     <div class="items-box payment-box">
                         <div class="item">
-                            <img alt="payment icon" src="img/visa.svg" />
+                            <img alt="payment icon" src="img/visa.svg" >
                         </div>
                         <div class="item">
-                            <img alt="payment icon" src="img/master.svg" />
+                            <img alt="payment icon" src="img/master.svg" >
                         </div>
                         <div class="item discover-item">
-                            <img alt="payment icon" src="img/discover.svg" />
+                            <img alt="payment icon" src="img/discover.svg" >
                         </div>
                         <div class="item">
-                            <img alt="payment icon" src="img/amex.svg" />
+                            <img alt="payment icon" src="img/amex.svg" >
                         </div>
                         <div class="item">
-                            <img alt="payment icon" src="img/paypal.svg" />
+                            <img alt="payment icon" src="img/paypal.svg" >
                         </div>
                         <div class="item">
-                            <img alt="payment icon" src="img/gpay.svg" />
+                            <img alt="payment icon" src="img/gpay.svg" >
                         </div>
                         <div class="item">
-                            <img alt="payment icon" src="img/applepay.svg" />
+                            <img alt="payment icon" src="img/applepay.svg" >
                         </div>
                         <div class="item">
-                            <img alt="payment icon" src="img/bank.svg" />
+                            <img alt="payment icon" src="img/bank.svg" >
                         </div>
                     </div>
                 </div>
                 <div class="clm">
                     <p class="note">Developers:</p>
                     <div class="items-box developers-box">
-                        <img alt="logo" src="img/playtech.svg" />
-                        <img alt="logo" src="img/realtime.svg" />
+                        <img alt="logo" src="img/playtech.svg" >
+                        <img alt="logo" src="img/realtime.svg" >
                     </div>
                 </div>
             </div>
@@ -480,8 +480,8 @@
                     <p class="bonus-text">1.75 Million WOW Coins + 35 SC</p>
                 </div>
                 <div class="btn-row">
-                    <button class="fav-btn"><i></i></button>
-                    <button class="btn color-btn">Play Now</button>
+                    <a class="fav-btn" href="#"><i></i></a>
+                    <a class="btn color-btn" href="#">Play Now</a>
                 </div>
             </div>
         </div>
@@ -499,7 +499,7 @@
                     <p class="text">100FREESPINS</p>
                 </div>
                 <div class="btn-row">
-                    <button class="btn white-btn">Claim Now</button>
+                    <a class="btn white-btn" href="#">Claim Now</a>
                 </div>
             </div>
             <div class="row row-grid">
@@ -513,7 +513,7 @@
                     <p class="text">$5FREE</p>
                 </div>
                 <div class="btn-row">
-                    <button class="btn white-btn">Claim Now</button>
+                    <a class="btn white-btn" href="#">Claim Now</a>
                 </div>
             </div>
             <div class="row row-grid">
@@ -527,7 +527,7 @@
                     <p class="text">BONUS100</p>
                 </div>
                 <div class="btn-row">
-                    <button class="btn white-btn">Claim Now</button>
+                    <a class="btn white-btn" href="#">Claim Now</a>
                 </div>
             </div>
         </div>
@@ -566,8 +566,8 @@
                     </div>
                     <div class="pagination"></div>
                     <div class="navigation">
-                        <button class="prev"></button>
-                        <button class="next"></button>
+                        <a class="prev"></a>
+                        <a class="next"></a>
                     </div>
                 </div>
 
@@ -847,7 +847,7 @@
                                 blanditiis commodi. Deserunt corporis mollitia. Et quos beatae sit et ducimus tempore et
                                 veniam. Modi aut rem natus odit autem nulla eveniet. Est incidunt accusantium dolore
                                 sunt explicabo minima.</p>
-                            <a>Visit Casino</a>
+                            <a href="#">Visit Casino</a>
                         </div>
                     </div>
                     <div class="row">
@@ -858,7 +858,7 @@
                                 laborum sunt iusto accusantium est eum ea autem est. Voluptas laboriosam tenetur laborum
                                 explicabo consequatur porro. Hic rerum ducimus. Eaque cumque ullam ad corporis nihil.
                             </p>
-                            <a>Visit Casino</a>
+                            <a href="#">Visit Casino</a>
                         </div>
                     </div>
                     <div class="row">
@@ -869,7 +869,7 @@
                                 rem qui aliquam dolorem. Fuga aut omnis autem natus. Consectetur error est.
                                 Reprehenderit voluptas ex inventore soluta. Tempora maiores tenetur nemo autem quas
                                 excepturi iste adipisci.</p>
-                            <a>Visit Casino</a>
+                            <a href="#">Visit Casino</a>
                         </div>
                     </div>
                     <div class="row">
@@ -880,7 +880,7 @@
                                 assumenda mollitia alias alias omnis quia deleniti sed cum. Harum magni optio blanditiis
                                 ex cumque quis. Voluptas quo aut inventore dolorem. Est eaque laboriosam et sit dolorem.
                             </p>
-                            <a>Visit Casino</a>
+                            <a href="#">Visit Casino</a>
                         </div>
                     </div>
                     <div class="row">
@@ -893,7 +893,7 @@
                                 recusandae excepturi. Nulla assumenda mollitia alias alias omnis quia deleniti sed cum.
                                 Harum magni optio blanditiis ex cumque quis. Voluptas quo aut inventore dolorem. Est
                                 eaque laboriosam et sit dolorem.</p>
-                            <a>Visit Casino</a>
+                            <a href="#">Visit Casino</a>
                         </div>
                     </div>
                 </div>
@@ -913,8 +913,8 @@
                         </div>
                         <div class="pagination"></div>
                         <div class="navigation">
-                            <button class="prev"></button>
-                            <button class="next"></button>
+                            <a class="prev"></a>
+                            <a class="next"></a>
                         </div>
                     </div>
 
@@ -1009,27 +1009,27 @@
 
                     <div class="support-box">
                         <div class="support-row">
-                            <img alt="logo" src="img/chatting-01.svg" />
+                            <img alt="logo" src="img/chatting-01.svg" >
                             <p class="name">Live Chat:</p>
                             <p class="text">support tickets only</p>
                         </div>
                         <div class="support-row">
-                            <img alt="logo" src="img/mail-01.svg" />
+                            <img alt="logo" src="img/mail-01.svg" >
                             <p class="name">Email:</p>
                             <a>support@wowvegas.com</a>
                         </div>
                         <div class="support-row">
-                            <img alt="logo" src="img/smart-phone-01.svg" />
+                            <img alt="logo" src="img/smart-phone-01.svg" >
                             <p class="name">Phone:</p>
                             <p class="text">not available</p>
                         </div>
                         <div class="support-row">
-                            <img alt="logo" src="img/globe-02.svg" />
+                            <img alt="logo" src="img/globe-02.svg" >
                             <p class="name">Supported Language:</p>
                             <p class="text">English</p>
                         </div>
                         <div class="support-row">
-                            <img alt="logo" src="img/new-twitter.svg" />
+                            <img alt="logo" src="img/new-twitter.svg" >
                             <p class="name">Twitter:</p>
                             <a href="https://x.com/wowvegascom" target="_blank">@wowvegascom</a>
                         </div>
@@ -1049,7 +1049,7 @@
                         <div class="table-row grid">
                             <p class="table-title">WOW Vegas promo code</p>
                             <p class="text">COVERSBONUS</p>
-                            <button class="btn white-btn">Copy Code <i></i></button>
+                            <a class="btn white-btn" href="#">Copy Code <i></i></a>
                         </div>
                         <div class="table-row grid">
                             <p class="table-title">Welcome bonus</p>
@@ -1175,11 +1175,11 @@
                             <div class="slide">
                                 <div class="news-box">
                                     <div class="card">
-                                        <div class="logo"> <img alt="logo" src="img/mrvegas.jpeg" /></div>
+                                        <div class="logo"> <img alt="logo" src="img/mrvegas.jpeg" ></div>
                                         <p class="name">Mr Vegas Casino</p>
                                         <div class="stars-box">
                                             <label class="rating-label">
-                                                <input class="rating-stars" max="5" readonly
+                                                <input class="rating-stars" max="5" disabled
                                                     oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                                     step="0.5" style="--value:4.8" type="range" value="4.8">
                                             </label>
@@ -1192,18 +1192,18 @@
                                             <p class="note">Welcome Bonus:</p>
                                             <p class="title">100% Welcome Bonus up to $200 + 11 Bonus Spins</p>
                                         </div>
-                                        <button class="btn color-btn">Play Now</button>
+                                        <a class="btn color-btn" href="#">Play Now</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="news-box">
                                     <div class="card">
-                                        <div class="logo"> <img alt="logo" src="img/betmgm.jpeg" /></div>
+                                        <div class="logo"> <img alt="logo" src="img/betmgm.jpeg" ></div>
                                         <p class="name">BetMGM Casino</p>
                                         <div class="stars-box">
                                             <label class="rating-label">
-                                                <input class="rating-stars" max="5" readonly
+                                                <input class="rating-stars" max="5" disabled
                                                     oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                                     step="0.5" style="--value:4.8" type="range" value="4.8">
                                             </label>
@@ -1216,7 +1216,7 @@
                                             <p class="note">Welcome Bonus:</p>
                                             <p class="title">Up To $200 Welcome Bonus + 100 Bonus Spins</p>
                                         </div>
-                                        <button class="btn color-btn">Play Now</button>
+                                        <a class="btn color-btn" href="#">Play Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -1227,7 +1227,7 @@
                                         <p class="name">PlayOJO Casino</p>
                                         <div class="stars-box">
                                             <label class="rating-label">
-                                                <input class="rating-stars" max="5" readonly=""
+                                                <input class="rating-stars" max="5" disabled
                                                     oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                                     step="0.5" style="--value:4.8" type="range" value="4.8">
                                             </label>
@@ -1240,18 +1240,18 @@
                                             <p class="note">Welcome Bonus:</p>
                                             <p class="title">Get 80 Extra Spins on your 1st Deposit</p>
                                         </div>
-                                        <button class="btn color-btn">Play Now</button>
+                                        <a class="btn color-btn" href="#">Play Now</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="news-box">
                                     <div class="card">
-                                        <div class="logo"> <img alt="logo" src="img/betmgm.jpeg" /></div>
+                                        <div class="logo"> <img alt="logo" src="img/betmgm.jpeg" ></div>
                                         <p class="name">BetMGM Casino</p>
                                         <div class="stars-box">
                                             <label class="rating-label">
-                                                <input class="rating-stars" max="5" readonly
+                                                <input class="rating-stars" max="5" disabled
                                                     oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
                                                     step="0.5" style="--value:4.8" type="range" value="4.8">
                                             </label>
@@ -1264,22 +1264,22 @@
                                             <p class="note">Welcome Bonus:</p>
                                             <p class="title">Up To $200 Welcome Bonus + 100 Bonus Spins</p>
                                         </div>
-                                        <button class="btn color-btn">Play Now</button>
+                                        <a class="btn color-btn" href="#">Play Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="pagination"></div>
                         <div class="navigation">
-                            <button class="prev"></button>
-                            <button class="next"></button>
+                            <a class="prev"></a>
+                            <a class="next"></a>
                         </div>
                     </div>
                 </div>
                 <div class="box" id="quest12">
                     <h2>Related Industry News</h2>
                     <div class="news-box">
-                        <img alt="picture" src="img/news1.jpeg" />
+                        <img alt="picture" src="img/news1.jpeg" >
                         <div class="clm">
                             <span>Industry</span>
                             <p class="title">Gaming Stakeholders Again Refute iGaming Cannibalization Fears</p>
@@ -1288,7 +1288,7 @@
                         </div>
                     </div>
                     <div class="news-box">
-                        <img alt="picture" src="img/news2.jpeg" />
+                        <img alt="picture" src="img/news2.jpeg" >
                         <div class="clm">
                             <span>Industry</span>
                             <p class="title">Federal Gaming Involvement Presents Threats, Opportunities, Industry
@@ -1298,7 +1298,7 @@
                         </div>
                     </div>
                     <div class="news-box">
-                        <img alt="picture" src="img/news3.jpeg" />
+                        <img alt="picture" src="img/news3.jpeg" >
                         <div class="clm">
                             <span>Industry</span>
                             <p class="title">Online Casino Stakeholders See Long Delay Before New Market Launches</p>
@@ -1446,7 +1446,7 @@
             <div class="written-box clm">
                 <p class="note">Written by:</p>
                 <div class="article-info-box row">
-                    <img class="autor-img" alt="autor" src="img/user.jpeg" />
+                    <img class="autor-img" alt="autor" src="img/user.jpeg" >
                     <div class="clm">
                         <p class="title">William Wilderman</p>
                         <p class="label">Casino Editor</p>
@@ -1470,9 +1470,9 @@
                     <p class="text">News, updates and industry insights directly to your inbox.</p>
                     <div class="input-row">
                         <input type="text" placeholder="Enter email address">
-                        <button class="btn color-btn">Subscribe</button>
+                        <a class="btn color-btn" href="#">Subscribe</a>
                     </div>
-                    <label>By providing email address and clicking on the subscribe button, you consent to receiving
+                    <label>By providing email address and clicking on the subscribe a, you consent to receiving
                         communications from CasinoDJ related to news, updates, and events and agree to the <a>Privacy
                             Policy.</a></label>
                 </div>
@@ -1514,34 +1514,35 @@
                     <p class="title">Follow us:</p>
                     <div class="media-box">
                         <div class="item"><a href="https://www.facebook.com/wowvegascom/" target="_blank"><img
-                                    alt="facebook" src="img/facebook-fill.svg" /></a></div>
-                        <div class="item"><a target="_blank"><img alt="linkedin" src="img/linkedin-fill.svg" /></a>
+                                    alt="facebook" src="img/facebook-fill.svg"></a></div>
+                        <div class="item"><a target="_blank" href="#"><img alt="linkedin"
+                                    src="img/linkedin-fill.svg"></a>
                         </div>
                         <div class="item"><a href="https://x.com/wowvegascom" target="_blank"><img alt="twitter"
-                                    src="img/twitter-x-fill.svg" /></a></div>
+                                    src="img/twitter-x-fill.svg"></a></div>
                         <div class="item"><a href="https://www.youtube.com/channel/UCBvbug2yPCkkYHbafkaudNg"
-                                target="_blank"><img alt="youtube" src="img/youtube-fill.svg" /></a></div>
+                                target="_blank"><img alt="youtube" src="img/youtube-fill.svg"></a></div>
                     </div>
                 </div>
                 <div class="clm">
                     <p class="title">Website Verified & Secured by:</p>
                     <div class="icons-row">
-                        <img alt="logo" src="img/dmca_logo.svg" width="128px" />
-                        <img alt="logo" src="img/gamcare.svg" width="138px" />
-                        <img alt="logo" src="img/BeGambleAware.svg" width="290px" />
-                        <img alt="logo" src="img/pci.svg" width="126px" />
+                        <img alt="logo" src="img/dmca_logo.svg" width="128px">
+                        <img alt="logo" src="img/gamcare.svg" width="138px">
+                        <img alt="logo" src="img/BeGambleAware.svg" width="290px">
+                        <img alt="logo" src="img/pci.svg" width="126px">
                     </div>
 
                 </div>
                 <div class="clm">
                     <p class="title">Choose Language</p>
                     <div class="flag-dropdown">
-                        <button class="dropbtn">
+                        <a class="dropbtn">
                             <img id="selected-flag-footer" class="selected-flag" src="img/flags/UnitedStates.svg"
                                 alt="USA Flag">
                             <p id="language">US - English</p>
                             <i></i>
-                        </button>
+                        </a>
                         <div class="dropdown-content">
                             <a href="#" data-country="UnitedStates" data-language="US - English"><img
                                     src="img/flags/UnitedStates.svg" alt="USA Flag"> US - English</a>
@@ -1614,15 +1615,13 @@
                                     src="img/flags/Slovakia.svg" alt="Slovakia Flag"> SK - Slovak</a>
                             <a href="#" data-country="SouthKorea" data-language="KR - Korean"><img
                                     src="img/flags/SouthKorea.svg" alt="South Korea Flag"> KR - Korean</a>
-                            <a href="#" data-country="Turkiye" data-language="TR - Turkish"><img
+                            <a href="#" data-country="Türkiye" data-language="TR - Turkish"><img
                                     src="img/flags/Turkiye.svg" alt="Türkiye Flag"> TR - Turkish</a>
                             <a href="#" data-country="Mexico" data-language="MX - Spanish"><img
                                     src="img/flags/Mexico.svg" alt="Mexico Flag"> MX - Spanish</a>
                             <a href="#" data-country="Jamaica" data-language="JM - English"><img
                                     src="img/flags/Jamaica.svg" alt="Jamaica Flag"> JM - English</a>
                         </div>
-
-
                     </div>
 
                 </div>
