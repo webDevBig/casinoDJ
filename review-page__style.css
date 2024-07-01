@@ -1400,7 +1400,7 @@ a.menu-toggle span::after {
     letter-spacing: -1.2px;
 }
 
-.sectionC h2 {
+.sectionC h2{
     font-size: 32px;
     line-height: 40px;
     font-weight: bold;
@@ -1413,6 +1413,7 @@ a.menu-toggle span::after {
     display: flex;
     align-items: center;
     margin: 0 0 0 24px;
+    opacity: 1;
 }
 
 .sectionC h2 i {
