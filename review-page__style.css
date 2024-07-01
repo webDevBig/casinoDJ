@@ -766,12 +766,33 @@ a.menu-toggle span::after {
     border: none;
 }
 
-.sectionA.fixed-section.fixed .row-grid {
+/* .sectionA.fixed-section.fixed .row-grid {
     display: none;
-}
+} */
 
 .sectionA.fixed-section.fixed .row-grid.fixed-row {
     display: grid;
+}
+
+.sectionA.fixed-section.fixed .fav-btn {
+    display: none;
+}
+
+.sectionA.fixed-section.fixed .row-grid .btn-row {
+    justify-content: flex-end;
+}
+.sectionA.fixed-section.fixed .row-grid .color-btn {
+    width: 52px;
+    height: 52px;
+    color: transparent;
+    padding: 12px;
+    background-image: url(img/play.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+.sectionA.fixed-section.fixed .fav-btn {
+    display: none;
 }
 
 .sectionA .row-grid img {
