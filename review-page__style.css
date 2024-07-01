@@ -755,6 +755,7 @@ a.menu-toggle span::after {
     grid-column-gap: 24px;
     padding: 24px 0;
     border-bottom: 1px solid rgba(36, 43, 48, .1);
+    align-items: center;
 }
 .sectionA .row-grid .clm{
     justify-content: center;
