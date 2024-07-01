@@ -441,3 +441,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const sliders = document.querySelectorAll('.slider');
     sliders.forEach(slider => new Slider(slider));
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Отримати всі слайди
+    var slides = document.querySelectorAll('.popup-slider .slide img');
+    
+    // Отримати елементи попапу
+    var popup = document.getElementById('popup');
+    var popupImg = document.getElementById('popup-img');
+    var popupClose = document.querySelector('.popup-close');
+    
+    // Функція для відкриття попапу
+    function openPopup(event) {
+        popup.style.display = 'flex';
+        popupImg.src = event.target.src;
+    }
+    
+    // Додати обробник події для кожного слайда
+    slides.forEach(function(slide) {
+        slide.addEventListener('click', openPopup);
+    });
+    
+    // Функція для закриття попапу
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+    
+    // Додати обробник події для закриття попапу
+    popupClose.addEventListener('click', closePopup);
+    
+    // Закриття попапу при натисканні поза зображенням
+    popup.addEventListener('click', function(event) {
+        if (event.target === popup) {
+            closePopup();
+        }
+    });
+});
+
