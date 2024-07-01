@@ -38,7 +38,7 @@ header {
     z-index: 10;
 }
 
-section {
+.section {
     width: 100%;
     padding: 96px 0;
     position: relative;
@@ -3031,7 +3031,7 @@ footer span {
         display: block;
     }
 
-    section {
+    .section {
         padding: 48px 0;
     }
 
