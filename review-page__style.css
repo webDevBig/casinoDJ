@@ -757,12 +757,16 @@ a.menu-toggle span::after {
     border-bottom: 1px solid rgba(36, 43, 48, .1);
     align-items: center;
 }
-.sectionA .row-grid .clm{
+
+.sectionA .row-grid .clm {
     justify-content: center;
 }
 
 .sectionA.fixed-section {
     border-bottom: 1px solid rgba(36, 43, 48, .1);
+    position: sticky;
+    top: 80px;
+    z-index: 3;
 }
 
 .sectionA.fixed-section .row-grid {
@@ -782,16 +786,28 @@ a.menu-toggle span::after {
 .sectionA.fixed-section.fixed .row-grid .btn-row {
     justify-content: flex-end;
 }
-.sectionA.fixed-section.fixed .row-grid .color-btn {
+
+.sectionA.fixed-section .row-grid .fixed-btn {
+    display: none;
     width: 52px;
     height: 52px;
-    color: transparent;
     padding: 12px;
     background-image: url(img/play.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;
 }
+.sectionA.fixed-section .row-grid .static-btn{
+    display: flex;
+}
+.sectionA.fixed-section.fixed .row-grid .static-btn{
+    display: none;
+}
+
+.sectionA.fixed-section.fixed .row-grid .fixed-btn {
+    display: flex;
+}
+
 .sectionA.fixed-section.fixed .fav-btn {
     display: none;
 }
@@ -3051,6 +3067,7 @@ footer span {
         grid-template-columns: 80px 1fr 48px;
         grid-row-gap: 12px;
         grid-column-gap: 12px;
+        padding: 16px 0;
     }
 
     .sectionA .h1 {
@@ -3121,15 +3138,14 @@ footer span {
         letter-spacing: -0.42px;
         text-overflow: clip;
     }
-
-    .sectionA.fixed-section.fixed .row-grid .color-btn {
+    .sectionA.fixed-section .row-grid .static-btn{
+        display: none;
+    }
+    .sectionA.fixed-section .row-grid .fixed-btn{
+        display: flex;
         width: 48px;
         height: 48px;
-        color: transparent;
         padding: 12px;
-        background-image: url(img/play.svg);
-        background-position: center;
-        background-repeat: no-repeat;
         background-size: 24px;
     }
 

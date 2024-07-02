@@ -285,20 +285,20 @@ subMenu.forEach(menu => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var section = document.querySelector(".fixed-section");
-    var row = document.querySelector(".fixed-row");
-    var headerHeight = 80; // Висота хедера
-    var rowOffset = row.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+// document.addEventListener("DOMContentLoaded", function() {
+//     var section = document.querySelector(".fixed-section");
+//     var row = document.querySelector(".fixed-row");
+//     var headerHeight = 80; // Висота хедера
+//     var rowOffset = row.getBoundingClientRect().top + window.pageYOffset - headerHeight;
   
-    window.addEventListener("scroll", function() {
-      if (window.pageYOffset > rowOffset) {
-        section.classList.add("fixed");
-      } else {
-        section.classList.remove("fixed");
-      }
-    });
-  });
+//     window.addEventListener("scroll", function() {
+//       if (window.pageYOffset > rowOffset) {
+//         section.classList.add("fixed");
+//       } else {
+//         section.classList.remove("fixed");
+//       }
+//     });
+//   });
   
 
 
@@ -441,6 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sliders = document.querySelectorAll('.slider');
     sliders.forEach(slider => new Slider(slider));
 });
+
 
 
 
