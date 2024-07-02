@@ -1790,6 +1790,7 @@ header .navbar-nav .nav-item.dd:hover .dropdownMenu {
     margin-top: 12px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .sectionC #quest5 .row::before {
@@ -2487,6 +2488,9 @@ header .navbar-nav .nav-item.dd:hover .dropdownMenu {
     padding: 12px 24px;
     margin: 0 0 0 8px;
     opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sectionE label {
@@ -3444,7 +3448,7 @@ footer span {
         width: 100%;
     }
 
-    .sectionE .input-row .btn {
+    .sectionE .input-row a.btn {
         width: 100%;
         margin: 8px 0 0;
     }

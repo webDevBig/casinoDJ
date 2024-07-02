@@ -772,6 +772,7 @@ a.menu-toggle span::after {
 
 .sectionA.fixed-section.fixed .row-grid.fixed-row {
     display: grid;
+    padding: 14px 0;
 }
 
 .sectionA.fixed-section.fixed .fav-btn {
@@ -2397,6 +2398,10 @@ a.menu-toggle span::after {
 .sectionE .input-row .btn {
     padding: 12px 24px;
     margin: 0 0 0 8px;
+    opacity: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .sectionE label {
