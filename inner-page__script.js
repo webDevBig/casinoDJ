@@ -158,14 +158,14 @@ function syncFlags(flagSrc) {
 }
 
 function changeFlag(country, event) {
-    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
+    event.preventDefault(); 
     let flagSrc = `img/flags/${country.charAt(0).toUpperCase() + country.slice(1)}.svg`;
     syncFlags(flagSrc);
     hideAllDropdowns();
 }
 
 function changeLang(language, event) {
-    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
+    event.preventDefault(); 
     let languageElements = document.querySelector('#language');
     languageElements.innerHTML = `${language}`;
 }
