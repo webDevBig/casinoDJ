@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 function showDropdown(dropdownContent) {
     dropdownContent.classList.add('show');
     dropdownContent.previousElementSibling.classList.add('open');
@@ -159,17 +158,16 @@ function syncFlags(flagSrc) {
 }
 
 function changeFlag(country, event) {
-    event.preventDefault(); // Prevent the default action
+    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
     let flagSrc = `img/flags/${country.charAt(0).toUpperCase() + country.slice(1)}.svg`;
     syncFlags(flagSrc);
     hideAllDropdowns();
 }
 
 function changeLang(language, event) {
-    event.preventDefault(); // Prevent the default action
+    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
     let languageElements = document.querySelector('#language');
     languageElements.innerHTML = `${language}`;
-   
 }
 
 document.querySelectorAll('.dropbtn').forEach(function (a) {
@@ -197,6 +195,22 @@ document.querySelectorAll('.dropdown-content a').forEach(function (item) {
         changeLang(this.getAttribute('data-language'), event);
     });
 });
+
+// Додаткові обробники для Safari
+document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
+    dropdown.addEventListener('touchstart', function (event) {
+        hideAllDropdowns();
+        showDropdown(dropdown);
+        event.stopPropagation();
+    });
+});
+
+window.addEventListener('touchstart', function (event) {
+    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown-content')) {
+        hideAllDropdowns();
+    }
+});
+
 
 
 

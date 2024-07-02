@@ -134,14 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-// Функція для відображення конкретного dropdown
 function showDropdown(dropdownContent) {
     dropdownContent.classList.add('show');
     dropdownContent.previousElementSibling.classList.add('open');
 }
 
-// Функція для приховання всіх dropdown
 function hideAllDropdowns() {
     let dropdowns = document.getElementsByClassName('dropdown-content');
     for (let i = 0; i < dropdowns.length; i++) {
@@ -153,7 +150,6 @@ function hideAllDropdowns() {
     }
 }
 
-// Функція для синхронізації прапору
 function syncFlags(flagSrc) {
     let flagElements = document.querySelectorAll('.selected-flag');
     flagElements.forEach(function (flagElement) {
@@ -161,23 +157,19 @@ function syncFlags(flagSrc) {
     });
 }
 
-// Функція для зміни прапору
 function changeFlag(country, event) {
-    event.preventDefault(); // Prevent the default action
+    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
     let flagSrc = `img/flags/${country.charAt(0).toUpperCase() + country.slice(1)}.svg`;
     syncFlags(flagSrc);
     hideAllDropdowns();
 }
 
-// Функція для зміни мови
 function changeLang(language, event) {
-    event.preventDefault(); // Prevent the default action
+    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
     let languageElements = document.querySelector('#language');
     languageElements.innerHTML = `${language}`;
-
 }
 
-// Додаємо обробники подій для всіх dropdown
 document.querySelectorAll('.dropbtn').forEach(function (a) {
     a.addEventListener('mouseover', function () {
         let dropdownContent = this.nextElementSibling;
@@ -191,19 +183,32 @@ document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
     });
 });
 
-// Обробник кліку поза dropdown
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn *')) {
         hideAllDropdowns();
     }
 }
 
-// Додаємо обробники подій для елементів dropdown
 document.querySelectorAll('.dropdown-content a').forEach(function (item) {
     item.addEventListener('click', function (event) {
         changeFlag(this.getAttribute('data-country'), event);
         changeLang(this.getAttribute('data-language'), event);
     });
+});
+
+
+document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
+    dropdown.addEventListener('touchstart', function (event) {
+        hideAllDropdowns();
+        showDropdown(dropdown);
+        event.stopPropagation();
+    });
+});
+
+window.addEventListener('touchstart', function (event) {
+    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown-content')) {
+        hideAllDropdowns();
+    }
 });
 
 

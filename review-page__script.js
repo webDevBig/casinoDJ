@@ -93,7 +93,6 @@ function showDropdown(dropdownContent) {
     dropdownContent.previousElementSibling.classList.add('open');
 }
 
-
 function hideAllDropdowns() {
     let dropdowns = document.getElementsByClassName('dropdown-content');
     for (let i = 0; i < dropdowns.length; i++) {
@@ -105,7 +104,6 @@ function hideAllDropdowns() {
     }
 }
 
-
 function syncFlags(flagSrc) {
     let flagElements = document.querySelectorAll('.selected-flag');
     flagElements.forEach(function (flagElement) {
@@ -113,22 +111,18 @@ function syncFlags(flagSrc) {
     });
 }
 
-
 function changeFlag(country, event) {
-    event.preventDefault(); // Prevent the default action
+    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
     let flagSrc = `img/flags/${country.charAt(0).toUpperCase() + country.slice(1)}.svg`;
     syncFlags(flagSrc);
     hideAllDropdowns();
 }
 
-
 function changeLang(language, event) {
-    event.preventDefault(); // Prevent the default action
+    event.preventDefault(); // Зупиняємо виконання дії за замовчуванням
     let languageElements = document.querySelector('#language');
     languageElements.innerHTML = `${language}`;
-
 }
-
 
 document.querySelectorAll('.dropbtn').forEach(function (a) {
     a.addEventListener('mouseover', function () {
@@ -143,13 +137,11 @@ document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
     });
 });
 
-
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn *')) {
         hideAllDropdowns();
     }
 }
-
 
 document.querySelectorAll('.dropdown-content a').forEach(function (item) {
     item.addEventListener('click', function (event) {
@@ -157,6 +149,22 @@ document.querySelectorAll('.dropdown-content a').forEach(function (item) {
         changeLang(this.getAttribute('data-language'), event);
     });
 });
+
+// Додаткові обробники для Safari
+document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
+    dropdown.addEventListener('touchstart', function (event) {
+        hideAllDropdowns();
+        showDropdown(dropdown);
+        event.stopPropagation();
+    });
+});
+
+window.addEventListener('touchstart', function (event) {
+    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown-content')) {
+        hideAllDropdowns();
+    }
+});
+
 
 
 
@@ -284,24 +292,6 @@ subMenu.forEach(menu => {
         }
     }
 });
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     var section = document.querySelector(".fixed-section");
-//     var row = document.querySelector(".fixed-row");
-//     var headerHeight = 80; // Висота хедера
-//     var rowOffset = row.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-  
-//     window.addEventListener("scroll", function() {
-//       if (window.pageYOffset > rowOffset) {
-//         section.classList.add("fixed");
-//       } else {
-//         section.classList.remove("fixed");
-//       }
-//     });
-//   });
-  
-
-
 
 
 // slider
